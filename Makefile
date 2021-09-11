@@ -14,9 +14,9 @@ install-azure:
 	pip install --upgrade pip &&\
 		pip install -r requirements-azure.txt
 
-install-amazon-linux:
+install-cloud9:
 	pip install --upgrade pip &&\
-		pip install -r amazon-linux.txt
+		pip install -r requirements-cloud9.txt
 lint:
 	pylint --disable=R,C hello.py
 
