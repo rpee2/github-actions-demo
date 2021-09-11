@@ -1,4 +1,4 @@
-name: Latest Python
+name: Python 3.9
 on: [push]
 jobs:
   build:
