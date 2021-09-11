@@ -2,7 +2,7 @@ name: AWS Cloud9 3.7.9
 on: [push]
 jobs:
   build:
-    runs-on: amazonlinux
+    runs-on: amazonlinux2
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.7.9
