@@ -2,7 +2,7 @@ name: AWS Cloud9 3.7.9
 on: [push]
 jobs:
   build:
-    runs-on: amazonlinux2
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.7.9
@@ -11,7 +11,7 @@ jobs:
         python-version: 3.7.9
     - name: Install dependencies
       run: |
-        make install-amazon-linux
+        make install-cloud9
     - name: Lint
       run: |
         make lint
